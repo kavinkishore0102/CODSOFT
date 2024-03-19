@@ -1,0 +1,236 @@
+body{
+    color: white;
+    background-image: url('https://img.freepik.com/free-vector/futuristic-halftone-background_53876-90595.jpg?w=996&t=st=1709659921~exp=1709660521~hmac=885c10592d212b3afb8a13efe7d68358060c9a5290a8d9f250f56e3da083a37e');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+    font-family: 'Times New Roman', Times, serif;
+    font-display: auto;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.about{
+    display: flex;
+}
+.about img{
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+    margin-top: 45px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+.about h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-variant: small-caps;
+}
+.skills h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-variant: small-caps;
+}
+.skills{
+    display: flex;
+}
+.circle h2, .circle1 h2{
+    color:yellow;
+}
+.circle {
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    margin-left: 300px;
+    background-color: #3498db; 
+    border-radius: 600px; 
+    transition: transform 0.5s ease;
+
+}
+.circle:hover {
+    transform: scale(1.5); 
+}
+.circle h5{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    padding-left: 10px;
+}
+.circle1 {
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    margin-left: 300px;
+    background-color: #3498db; 
+    border-radius: 600px; 
+    transition: transform 0.5s ease;
+}
+.circle1:hover{
+    transform: scale(1.5);
+}
+.circle1 h5{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    padding-left: 10px;
+}
+header h2, header h4 {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+
+.project h3{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-variant: small-caps;
+}
+.project h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    padding-left: 20px;
+    margin-top: 80px;
+    text-align: justify;
+    
+}
+.project{
+    display: flex;
+}
+.project img{
+    width: 400px;
+    height: 380px;
+    margin-left: 70px;
+    margin-top: 80px;
+
+}
+.opencv img{
+    width: 450px;
+    height: 400px;
+    margin-right: 25px;
+    margin-left: 20px;
+}
+.opencv{
+    display: flex;
+}
+.opencv h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-variant: small-caps;
+}
+.robot h2{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-variant: small-caps;
+}
+.robot{
+    display: flex;
+}
+.robot img{
+    width: 400px;
+    height: 380px;
+    margin-left: 70px;
+    margin-top: 0px;
+}
+.contact h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+.cimg img{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+.cimg {
+    display: flex;
+}
+
+.project img, .opencv img, .robot img {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.project h2, .opencv h2, .robot h2 {
+    opacity: 0;
+    animation: slideInFromLeft 1s forwards;
+    /* or */
+    animation: slideInFromRight 1s forwards;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.about h3, .skills h3 {
+    opacity: 0;
+    animation: slideInFromLeft 1s forwards;
+    /* or */
+    animation: slideInFromRight 1s forwards;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+footer p{
+    text-align: center;
+}
+header h4{
+    background: linear-gradient(to top, gainsboro, gray );
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
